@@ -48,6 +48,7 @@ a {
 
 .container {
     max-width: 71.43rem;
+    height:10.71rem;
     width:100%;
     margin: 0 auto;
 }
@@ -168,7 +169,7 @@ nav .current_page_item a {
 
 main {
     float: right;
-    max-width: 42.86rem;
+    max-width: 47.14rem;
     width:100%;
     padding: 0rem 0rem 0rem 0rem;
 }
@@ -219,6 +220,7 @@ article footer {
     font-family:Arial, Helvetica, sans-serif;
     padding-top: 1.5rem;
     margin-bottom: 2rem;
+    line-height:1.79rem;
 }
 
 .more {
@@ -238,6 +240,7 @@ article footer {
     display: block;
     float: left;
     max-width: 6.29rem;
+    width:100%;
     padding: .36rem .36rem;
     background: #222222;
     color: #FFFFFF;
@@ -249,6 +252,7 @@ article footer {
 
 aside {
     float: left;
+    width:100%;
     max-width: 19.29rem;
     margin: 0rem;
     padding: 2rem 0 0 0;
