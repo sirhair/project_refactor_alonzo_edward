@@ -43,12 +43,13 @@ a {
 }
 
 #wrapper {
+    padding:1rem;
     background: #FFFFFF url(../img/img05.jpg) repeat;
 }
 
 .container {
+    width: 100%;
     max-width: 71.43rem;
-    height:10.71rem;
     width:100%;
     margin: 0 auto;
 }
@@ -58,11 +59,12 @@ a {
 /* Header */
 
 #header-wrapper {
+    max-width: 71.43rem;
+    margin:0 auto;
     overflow: hidden;
 }
 
 #header {
-    max-width: 71.43rem;
     width:100%;
     margin: 0 auto;
     padding: 0 0;
@@ -71,8 +73,6 @@ a {
 /* Logo */
 
 #logo {
-    float: left;
-    max-width: 21.43rem;
     width:100%;
     margin: 0;
     padding: 0;
@@ -80,7 +80,6 @@ a {
 }
 
 #logo h1 {
-    line-height: 8.57rem;
     letter-spacing: -.14rem;
     font-size: 3.8em;
 }
@@ -113,29 +112,26 @@ a {
 /* Menu */
 
 nav {
-    float: right;
-    width: 35.71rem;
-    height: 6.43rem;
     margin: 0 auto;
     padding: 0;
 }
 
 nav ul {
-    float: right;
     margin: 0;
     padding: 1.5rem 0 0 0;
     list-style: none;
     line-height: normal;
+
 }
 
 nav li {
-    float: left;
+    width:100%;
 }
 
 nav a {
     display: block;
-    line-height: 7.14rem;
     margin-right: 1px;
+    line-height: 3.4rem;
     padding: 0 1.5rem 0 1.5rem;
     text-decoration: none;
     text-align: center;
@@ -160,7 +156,7 @@ nav .current_page_item a {
 /* Page */
 
 #page {
-    width: 71.43rem;
+    max-width: 71.43rem;
     margin: 0 auto;
     padding: 2.14rem 0;
 }
@@ -168,10 +164,13 @@ nav .current_page_item a {
 /* main */
 
 main {
-    float: right;
-    max-width: 47.14rem;
     width:100%;
     padding: 0rem 0rem 0rem 0rem;
+}
+
+main section{
+    max-width: 47.14rem;
+    margin:0 auto;
 }
 
 .post {
@@ -216,11 +215,11 @@ main {
 
 article footer {
     padding bottom:0; 
-    height:auto;
     font-family:Arial, Helvetica, sans-serif;
     padding-top: 1.5rem;
     margin-bottom: 2rem;
     line-height:1.79rem;
+    height:auto;
 }
 
 .more {
@@ -251,10 +250,9 @@ article footer {
 /* Sidebar */
 
 aside {
-    float: left;
+    max-width: 47.14rem;
+    margin:0 auto;
     width:100%;
-    max-width: 19.29rem;
-    margin: 0rem;
     padding: 2rem 0 0 0;
 }
 
@@ -344,8 +342,59 @@ footer a {
 
 #banner {
     margin: 0 auto;
-    width: 71.1rem;
-    height: 24.29rem;
+    width:100%;
     background: url(../img/img03.png) no-repeat left bottom;
 }
 
+#banner img{
+    margin-top: 1.5rem;
+    width:100%;
+}
+
+
+
+
+@media (min-width: 550px){
+
+    nav li {
+        float: left;
+        width: 20%;
+    }
+}
+
+@media (min-width: 850px){
+    nav{
+        float: right;
+        width: 35.71rem;
+    }   
+    nav ul {
+        float: right;
+    }
+    nav a{
+        line-height: 7.14rem;
+    }
+
+    #logo {
+        float: left;
+        max-width: 21.43rem;
+    }
+   #logo h1 {
+        line-height: 8.57rem;
+    }
+    nav li {
+        width:auto;
+    }
+    
+}
+@media (min-width: 1050px){
+    main{
+        float: right;
+        max-width: 47.14rem;
+    }
+    aside{
+        max-width: 19.29rem;
+        float: left;
+        margin: 0rem;
+    }
+
+}
