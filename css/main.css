@@ -201,29 +201,18 @@ article footer {
     height:auto;
 }
 
-.more {
-    display: block;
-    float: left;
-    max-width: 6.29rem;
-    width:100%;
-    padding: .36rem .36rem;
-    margin-right: .7rem;
+.more,
+.comments {
+    padding: .56rem .86rem;
     background: #222222;
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
+    display: inline-block;
 }
 
-.comments {
-    display: block;
-    float: left;
-    max-width: 6.29rem;
-    width:100%;
-    padding: .36rem .36rem;
-    background: #222222;
-    color: #FFFFFF;
-    text-align: center;
-    text-decoration: none;
+.more {
+    margin-right: .7rem;
 }
 
 /* Sidebar */
